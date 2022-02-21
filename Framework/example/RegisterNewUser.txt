@@ -17,8 +17,19 @@ ${_Create_an_Account_Elem}     xpath://BUTTON[@title='Create an Account']
 
 *** Keywords ***
 
-GoToUrl
-    Open browser    https://magento.nublue.co.uk/customer/account/create/   chrome
+Click__Create_an_Account_
+    Wait Until Page Contains Element    ${_Create_an_Account_Elem}	
+	Click button    ${_Create_an_Account_Elem}
+
+Enter__Confirm_Password_
+    [Arguments]      ${_Confirm_Password_}
+    Wait Until Page Contains Element    ${_Confirm_Password_Elem}    
+	Input Text      ${_Confirm_Password_Elem}     ${_Confirm_Password_}
+
+Enter_Email
+    [Arguments]      ${Email}
+    Wait Until Page Contains Element    ${EmailElem}    
+	Input Text      ${EmailElem}     ${Email}
 
 Enter_First_Name
     [Arguments]      ${First_Name}
@@ -30,21 +41,10 @@ Enter_Last_Name
     Wait Until Page Contains Element    ${Last_NameElem}    
 	Input Text      ${Last_NameElem}     ${Last_Name}
 
-Enter_Email
-    [Arguments]      ${Email}
-    Wait Until Page Contains Element    ${EmailElem}    
-	Input Text      ${EmailElem}     ${Email}
-
 Enter_Password
     [Arguments]      ${Password}
     Wait Until Page Contains Element    ${PasswordElem}    
 	Input Text      ${PasswordElem}     ${Password}
 
-Enter__Confirm_Password_
-    [Arguments]      ${_Confirm_Password_}
-    Wait Until Page Contains Element    ${_Confirm_Password_Elem}    
-	Input Text      ${_Confirm_Password_Elem}     ${_Confirm_Password_}
-
-Click__Create_an_Account_
-    Wait Until Page Contains Element    ${_Create_an_Account_Elem}	
-	Click button    ${_Create_an_Account_Elem}
+GoToUrl
+    Open browser    https://magento.nublue.co.uk/customer/account/create/   chrome
