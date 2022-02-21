@@ -6,30 +6,36 @@ Documentation     A test suite for the model https://helloworld.cloud.testinsigh
 Resource         pages.Customer Login
 
 *** Test Cases *** 
-OpenTestApplicationNegativeEnterEmailNegativeEnterPasswordNegative  
+OpenTestApplicationNegativeEnterEmailNegativeEnterPasswordClickSignInNegative  
     Open_Test_Application    
 
     Enter_Email    roni_cost
 
     Enter_Password    #!_ @
 
+    Click_Sign_In    
 
 
-OpenTestApplicationNegativeEnterEmailPositiveEnterPasswordNegative  
+
+OpenTestApplicationNegativeEnterEmailPositiveEnterPasswordClickSignInNegative  
     Open_Test_Application    
 
     Enter_Email    roni_cost
 
-    Enter_Password    XDWw4OXTdA
+    Enter_Password    yHQuSU6Biw
+
+    Click_Sign_In    
 
 
 
-OpenTestApplicationPositiveEnterEmailNegativeEnterPasswordNegative  
+OpenTestApplicationPositiveEnterEmailNegativeEnterPasswordClickSignInNegative  
     Open_Test_Application    
 
     Enter_Email    roni_cost@example.com
 
     Enter_Password    #!_ @
+
+    Click_Sign_In    
 
 
 
@@ -38,7 +44,7 @@ OpenTestApplicationPositiveEnterEmailPositiveEnterPasswordClickSignInPositive
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    usenf3yAuQ
+    Enter_Password    yaSp1j1aD3
 
     Click_Sign_In    
 
