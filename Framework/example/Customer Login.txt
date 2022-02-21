@@ -1,0 +1,24 @@
+*** Settings ***
+Library     AppiumLibrary
+
+*** Variables ***
+
+*** Keywords ***
+
+Click_Sign_In
+  Click Element  {{{ObjectIdentifier}}}
+
+Enter_Email
+    [Arguments]      ${Email}
+    Wait Until Page Contains Element    ${nullElem}    
+	Input Text      ${nullElem}     ${Email}
+
+Enter_Password
+    [Arguments]      ${Password}
+    Wait Until Page Contains Element    ${nullElem}    
+	Input Text      ${nullElem}     ${Password}
+
+Open Test Application
+  Open Application  http://127.0.0.1:4723/wd/hub  automationName=${ANDROID_AUTOMATION_NAME}
+  ...  platformName=${ANDROID_PLATFORM_NAME}  platformVersion=${ANDROID_PLATFORM_VERSION}
+  ...  app=${ANDROID_APP}  appPackage=com.example.mybank  appActivity=com.example.mybank.ui.login.LoginActivity
