@@ -22,7 +22,7 @@ OpenTestApplicationNegativeEnterEmailPositiveEnterPasswordClickSignInNegative
 
     Enter_Email    roni_cost
 
-    Enter_Password    yHQuSU6Biw
+    Enter_Password    4CuG7nBsz1
 
     Click_Sign_In    
 
@@ -44,7 +44,7 @@ OpenTestApplicationPositiveEnterEmailPositiveEnterPasswordClickSignInPositive
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    yaSp1j1aD3
+    Enter_Password    PjnFc3J0ts
 
     Click_Sign_In    
 
