@@ -9,6 +9,9 @@ ${PasswordElem}     xpath://INPUT[@name='login[password]']
 
 *** Keywords ***
 
+GoToUrl
+    Open browser    https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/   chrome
+
 Enter_Email
     [Arguments]      ${Email}
     Wait Until Page Contains Element    ${EmailElem}    
