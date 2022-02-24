@@ -1,0 +1,25 @@
+*** Settings ***
+Library     AppiumLibrary
+
+*** Variables ***
+
+${EmailElem}     id:com.example.mybank:id/username
+
+${PasswordElem}     id:com.example.mybank:id/password
+
+${Sign_InElem}     id:com.example.mybank:id/login
+
+*** Keywords ***
+
+Enter_Email
+    [Arguments]      ${Email}
+    Wait Until Page Contains Element    ${EmailElem}    
+	Input Text      ${EmailElem}     ${Email}
+
+Enter_Password
+    [Arguments]      ${Password}
+    Wait Until Page Contains Element    ${PasswordElem}    
+	Input Text      ${PasswordElem}     ${Password}
+
+Click_Sign_In
+  Click Element  {{{ObjectIdentifier}}}
