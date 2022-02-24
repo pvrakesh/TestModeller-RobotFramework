@@ -1,0 +1,20 @@
+*** Settings ***
+Library     SeleniumLibrary
+
+*** Variables ***
+
+${EmailElem}     xpath://INPUT[@name='login[username]']
+
+${PasswordElem}     xpath://INPUT[@name='login[password]']
+
+*** Keywords ***
+
+Enter_Email
+    [Arguments]      ${Email}
+    Wait Until Page Contains Element    ${EmailElem}    
+	Input Text      ${EmailElem}     ${Email}
+
+Enter_Password
+    [Arguments]      ${Password}
+    Wait Until Page Contains Element    ${PasswordElem}    
+	Input Text      ${PasswordElem}     ${Password}
