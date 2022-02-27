@@ -9,7 +9,7 @@ Resource         RegisterNewUser
 GoToUrlPositiveEnterFirstNameNegativeEnterLastNamePositiveEnterEmailNegativeEnterPasswordClick  
     GoToUrl    
 
-    Enter_First_Name    Monica
+    Enter_First_Name    Alexandrea
 
     Enter_Last_Name    ${EMPTY}
 
@@ -24,13 +24,13 @@ GoToUrlPositiveEnterFirstNameNegativeEnterLastNamePositiveEnterEmailNegativeEnte
 GoToUrlPositiveEnterFirstNameNegativeEnterLastNamePositiveEnterEmailPositiveEnterPasswordClick  
     GoToUrl    
 
-    Enter_First_Name    Zita
+    Enter_First_Name    Kaylee
 
     Enter_Last_Name    ${EMPTY}
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    u51LYFJx83
+    Enter_Password    j7Q5ZHc1Ql
 
     Click__Create_an_Account_    
 
@@ -39,9 +39,9 @@ GoToUrlPositiveEnterFirstNameNegativeEnterLastNamePositiveEnterEmailPositiveEnte
 GoToUrlPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailNegativeEnterPasswordClick  
     GoToUrl    
 
-    Enter_First_Name    Una
+    Enter_First_Name    Harmony
 
-    Enter_Last_Name    Abbott
+    Enter_Last_Name    Herman
 
     Enter_Email    roni_cost@example.com
 
@@ -54,13 +54,13 @@ GoToUrlPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailNegativeEnte
 GoToUrlPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnterPasswordClick  
     GoToUrl    
 
-    Enter_First_Name    Tobin
+    Enter_First_Name    Penelope
 
-    Enter_Last_Name    Kub
+    Enter_Last_Name    Balistreri
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    G8akVVzSft
+    Enter_Password    cDd5AIVi3g
 
     Click__Create_an_Account_    
 
@@ -69,43 +69,13 @@ GoToUrlPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnte
 GoToUrlPositiveEnterFirstNamePositiveEnterLastNameNegativeEnterEmailPositiveEnterPasswordClick  
     GoToUrl    
 
-    Enter_First_Name    Anais
+    Enter_First_Name    Lionel
 
-    Enter_Last_Name    Johnson
+    Enter_Last_Name    Stark
 
     Enter_Email    roni_cost
 
-    Enter_Password    981MpO9kdN
-
-    Click__Create_an_Account_    
-
-
-
-GoToUrlPositiveEnterFirstNameNegativeEnterLastNamePositiveEnterEmailNegativeEnterPasswordClick1  
-    GoToUrl    
-
-    Enter_First_Name    Alexandrea
-
-    Enter_Last_Name    #!_ @
-
-    Enter_Email    roni_cost@example.com
-
-    Enter_Password    #!_ @
-
-    Click__Create_an_Account_    
-
-
-
-GoToUrlPositiveEnterFirstNameNegativeEnterLastNamePositiveEnterEmailPositiveEnterPasswordClick1  
-    GoToUrl    
-
-    Enter_First_Name    Deonte
-
-    Enter_Last_Name    #!_ @
-
-    Enter_Email    roni_cost@example.com
-
-    Enter_Password    OiTHYssPB_
+    Enter_Password    SxxpqFHvXh
 
     Click__Create_an_Account_    
 
@@ -116,7 +86,7 @@ GoToUrlNegativeEnterFirstNamePositiveEnterLastNamePositiveEnterEmailNegativeEnte
 
     Enter_First_Name    #!_ @
 
-    Enter_Last_Name    Gerhold
+    Enter_Last_Name    Kuhlman
 
     Enter_Email    roni_cost@example.com
 
@@ -131,37 +101,37 @@ GoToUrlNegativeEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnte
 
     Enter_First_Name    #!_ @
 
-    Enter_Last_Name    Beier
+    Enter_Last_Name    Lind
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    r7GHr3zqOp
+    Enter_Password    HZKnBWTFFd
 
     Click__Create_an_Account_    
 
 
 
-GoToUrlNegativeEnterFirstNamePositiveEnterLastNameNegativeEnterEmailPositiveEnterPasswordClic  
+GoToUrlNegativeEnterFirstNamePositiveEnterLastNameNegativeEnterEmailPositiveEnterPasswordClick  
     GoToUrl    
 
     Enter_First_Name    #!_ @
 
-    Enter_Last_Name    Bode
+    Enter_Last_Name    Mertz
 
     Enter_Email    roni_cost
 
-    Enter_Password    w7qTlOEfn0
+    Enter_Password    UF8CgSqe9e
 
     Click__Create_an_Account_    
 
 
 
-GoToUrlNegativeEnterFirstNamePositiveEnterLastNamePositiveEnterEmailNegativeEnterPasswordClic  
+GoToUrlNegativeEnterFirstNamePositiveEnterLastNamePositiveEnterEmailNegativeEnterPasswordClick1  
     GoToUrl    
 
     Enter_First_Name    ${EMPTY}
 
-    Enter_Last_Name    Davis
+    Enter_Last_Name    Lang
 
     Enter_Email    roni_cost@example.com
 
@@ -176,26 +146,26 @@ GoToUrlNegativeEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnte
 
     Enter_First_Name    ${EMPTY}
 
-    Enter_Last_Name    Ullrich
+    Enter_Last_Name    King
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    I3wY0jxAa5
+    Enter_Password    LIE6iLKhRV
 
     Click__Create_an_Account_    
 
 
 
-GoToUrlNegativeEnterFirstNamePositiveEnterLastNameNegativeEnterEmailPositiveEnterPasswordClic1  
+GoToUrlNegativeEnterFirstNamePositiveEnterLastNameNegativeEnterEmailPositiveEnterPasswordClic  
     GoToUrl    
 
     Enter_First_Name    ${EMPTY}
 
-    Enter_Last_Name    O'Conner
+    Enter_Last_Name    Gibson
 
     Enter_Email    roni_cost
 
-    Enter_Password    5D_DDz37UO
+    Enter_Password    TwYPj8IBmd
 
     Click__Create_an_Account_    
 
