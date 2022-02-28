@@ -3,7 +3,7 @@ Documentation     A test suite for the model https://helloworld.cloud.testinsigh
 ...
 ...               This test suite was created by TestModeller.io
 
-Resource         Customer_Login
+Resource         Customer_Login.txt
 
 *** Test Cases *** 
 OpenTestApplicationNegativeEnterEmailPositiveEnterPasswordSigninbuttonnotenabled  
@@ -11,7 +11,7 @@ OpenTestApplicationNegativeEnterEmailPositiveEnterPasswordSigninbuttonnotenabled
 
     Enter_Email    roni_cost
 
-    Enter_Password    ALDwy0_Da1
+    Enter_Password    qtS8lr8XTe
 
 
 
@@ -29,7 +29,7 @@ OpenTestApplicationPositiveEnterEmailPositiveEnterPasswordClickSignInSignedin
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    PJFoHyRJAS
+    Enter_Password    dZXInsKPDE
 
     Click_Sign_In    
 
