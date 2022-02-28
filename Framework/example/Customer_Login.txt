@@ -11,10 +11,8 @@ ${Sign_InElem}     id:com.example.mybank:id/login
 
 *** Keywords ***
 
-GoToUrl
-  Open Application  http://127.0.0.1:4723/wd/hub  automationName=${ANDROID_AUTOMATION_NAME}
-  ...  platformName=${ANDROID_PLATFORM_NAME}  platformVersion=${ANDROID_PLATFORM_VERSION}
-  ...  app=${ANDROID_APP}  appPackage=com.example.mybank  appActivity=com.example.mybank.ui.login.LoginActivity
+Click_Sign_In
+  Click Element  {{{ObjectIdentifier}}}
 
 Enter_Email
     [Arguments]      ${Email}
@@ -26,5 +24,7 @@ Enter_Password
     Wait Until Page Contains Element    ${PasswordElem}    
 	Input Text      ${PasswordElem}     ${Password}
 
-Click_Sign_In
-  Click Element  {{{ObjectIdentifier}}}
+GoToUrl
+  Open Application  http://localhost:4723/wd/hub  automationName=[ANDROID_AUTOMATION_NAME]
+  ...  platformName=[ANDROID_PLATFORM_NAME]  platformVersion=[ANDROID_PLATFORM_VERSION]
+  ...  app=[ANDROID_APP]  appPackage=[APP_PACKAGE]  appActivity=[APP_ACTIVITY]
