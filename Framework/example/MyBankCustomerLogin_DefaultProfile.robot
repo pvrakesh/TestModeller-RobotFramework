@@ -7,16 +7,16 @@ Resource         Customer_Login.txt
 
 *** Test Cases *** 
 OpenTestApplicationNegativeEnterEmailPositiveEnterPasswordSigninbuttonnotenabled  
-    GoToUrl    "UiAutomator2"	"Android"	"10"	"emulator-5554"	"app-debug.apk"	"com.example.mybank"	"com.example.mybank.ui.login.LoginActivity"
+    GoToUrl    UiAutomator2	Android	10	emulator-5554	app-debug.apk	com.example.mybank	com.example.mybank.ui.login.LoginActivity
 
     Enter_Email    roni_cost
 
-    Enter_Password    qtS8lr8XTe
+    Enter_Password    cBkkDV_16e
 
 
 
 OpenTestApplicationNegativeEnterEmailNegativeEnterPasswordSigninbuttonnotenabled  
-    GoToUrl    "UiAutomator2"	"Android"	"10"	"emulator-5554"	"app-debug.apk"	"com.example.mybank"	"com.example.mybank.ui.login.LoginActivity"
+    GoToUrl    UiAutomator2	Android	10	emulator-5554	app-debug.apk	com.example.mybank	com.example.mybank.ui.login.LoginActivity
 
     Enter_Email    roni_cost
 
@@ -25,11 +25,11 @@ OpenTestApplicationNegativeEnterEmailNegativeEnterPasswordSigninbuttonnotenabled
 
 
 OpenTestApplicationPositiveEnterEmailPositiveEnterPasswordClickSignInSignedin  
-    GoToUrl    "UiAutomator2"	"Android"	"10"	"emulator-5554"	"app-debug.apk"	"com.example.mybank"	"com.example.mybank.ui.login.LoginActivity"
+    GoToUrl    UiAutomator2	Android	10	emulator-5554	app-debug.apk	com.example.mybank	com.example.mybank.ui.login.LoginActivity
 
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    dZXInsKPDE
+    Enter_Password    q_ltddJBcr
 
     Click_Sign_In    
 
