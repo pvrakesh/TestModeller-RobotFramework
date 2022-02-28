@@ -1,56 +1,30 @@
 *** Settings ***
-Library     SeleniumLibrary
+Library     AppiumLibrary
 
 *** Variables ***
 
-${EmailElem}     xpath://label[normalize-space()= 'Email']/../div/input
+${EmailElem}     id:com.example.mybank:id/username
 
-${PasswordPasswordElem}     xpath:(.//label[normalize-space()= 'Password'])[1]/../div/input
+${PasswordElem}     id:com.example.mybank:id/password
 
-${Sign_InElem}     xpath://BUTTON[@class='action login primary']
-
-${This_is_a_required_fieldElem}     xpath://label[normalize-space()= 'Email']/../div/div
-
-${This_is_a_required_field_1Elem}     xpath:(.//label[normalize-space()= 'Password'])[1]/../div/div
+${Sign_InElem}     id:com.example.mybank:id/login
 
 *** Keywords ***
 
-     
-	/**
- 	 * AssertUrl
-     * @name AssertUrl
-     */
-   public void AssertUrl()
-    {
-        String currentUrl = m_Driver.getCurrentUrl();
-        String expectedUrl = "https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/";
-
-        if (!currentUrl.equals("https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/")) {
-            Assert.fail("Expecting URL - "  + expectedUrl + " Found " + currentUrl);
-        }
-    }
-
-Click_Sign_In
-    Wait Until Page Contains Element    ${Sign_InElem}	
-	Click button    ${Sign_InElem}
-
-Click_This_is_a_required_field
-    Wait Until Page Contains Element    ${This_is_a_required_fieldElem}	
-	Click button    ${This_is_a_required_fieldElem}
+GoToUrl
+  Open Application  http://127.0.0.1:4723/wd/hub  automationName=${ANDROID_AUTOMATION_NAME}
+  ...  platformName=${ANDROID_PLATFORM_NAME}  platformVersion=${ANDROID_PLATFORM_VERSION}
+  ...  app=${ANDROID_APP}  appPackage=com.example.mybank  appActivity=com.example.mybank.ui.login.LoginActivity
 
 Enter_Email
     [Arguments]      ${Email}
     Wait Until Page Contains Element    ${EmailElem}    
 	Input Text      ${EmailElem}     ${Email}
 
-Enter_PasswordPassword
-    [Arguments]      ${PasswordPassword}
-    Wait Until Page Contains Element    ${PasswordPasswordElem}    
-	Input Text      ${PasswordPasswordElem}     ${PasswordPassword}
+Enter_Password
+    [Arguments]      ${Password}
+    Wait Until Page Contains Element    ${PasswordElem}    
+	Input Text      ${PasswordElem}     ${Password}
 
-GoToUrl
-    Open browser    https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/   chrome
-
-Click_This_is_a_required_field_1
-    Wait Until Page Contains Element    ${This_is_a_required_field_1Elem}	
-	Click button    ${This_is_a_required_field_1Elem}
+Click_Sign_In
+  Click Element  {{{ObjectIdentifier}}}
