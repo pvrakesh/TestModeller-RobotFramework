@@ -7,8 +7,6 @@ Resource         pages.Customer Login
 
 *** Test Cases *** 
 OpenTestApplicationNegativeEnterEmailNegativeEnterPasswordClickSignInNegative  
-    Open_Test_Application    
-
     Enter_Email    roni_cost
 
     Enter_Password    #!_ @
@@ -18,19 +16,15 @@ OpenTestApplicationNegativeEnterEmailNegativeEnterPasswordClickSignInNegative
 
 
 OpenTestApplicationNegativeEnterEmailPositiveEnterPasswordClickSignInNegative  
-    Open_Test_Application    
-
     Enter_Email    roni_cost
 
-    Enter_Password    4CuG7nBsz1
+    Enter_Password    NAqslRfLAY
 
     Click_Sign_In    
 
 
 
 OpenTestApplicationPositiveEnterEmailNegativeEnterPasswordClickSignInNegative  
-    Open_Test_Application    
-
     Enter_Email    roni_cost@example.com
 
     Enter_Password    #!_ @
@@ -40,11 +34,9 @@ OpenTestApplicationPositiveEnterEmailNegativeEnterPasswordClickSignInNegative
 
 
 OpenTestApplicationPositiveEnterEmailPositiveEnterPasswordClickSignInPositive  
-    Open_Test_Application    
-
     Enter_Email    roni_cost@example.com
 
-    Enter_Password    PjnFc3J0ts
+    Enter_Password    Jl2uNkcSch
 
     Click_Sign_In    
 
