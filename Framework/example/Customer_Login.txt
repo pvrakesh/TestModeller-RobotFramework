@@ -1,18 +1,20 @@
 *** Settings ***
-Library     AppiumLibrary
+Library     AppiumLibrary timeout=10
 
 *** Variables ***
 
-${EmailElem}     id:com.example.mybank:id/username
+${EmailElem}     id=com.example.mybank:id/username
 
-${PasswordElem}     id:com.example.mybank:id/password
+${PasswordElem}     id=com.example.mybank:id/password
 
-${Sign_InElem}     id:com.example.mybank:id/login
+${Sign_InElem}     id=com.example.mybank:id/login
 
 *** Keywords ***
 
-Click_Sign_In
-  Click Element  {{{ObjectIdentifier}}}
+GoToUrl
+  Open Application  http://localhost:4723/wd/hub  automationName=[ANDROID_AUTOMATION_NAME]
+  ...  platformName=[ANDROID_PLATFORM_NAME]  platformVersion=[ANDROID_PLATFORM_VERSION] deviceName=[DEVICE_NAME]
+  ...  app=[ANDROID_APP]  appPackage=[APP_PACKAGE]  appActivity=[APP_ACTIVITY]
 
 Enter_Email
     [Arguments]      ${Email}
@@ -24,7 +26,5 @@ Enter_Password
     Wait Until Page Contains Element    ${PasswordElem}    
 	Input Text      ${PasswordElem}     ${Password}
 
-GoToUrl
-  Open Application  http://localhost:4723/wd/hub  automationName=[ANDROID_AUTOMATION_NAME]
-  ...  platformName=[ANDROID_PLATFORM_NAME]  platformVersion=[ANDROID_PLATFORM_VERSION]
-  ...  app=[ANDROID_APP]  appPackage=[APP_PACKAGE]  appActivity=[APP_ACTIVITY]
+Click_Sign_In
+  Click Element  ${Sign_InElem} 
