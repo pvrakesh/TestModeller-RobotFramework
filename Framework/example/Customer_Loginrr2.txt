@@ -13,9 +13,10 @@ ${Sign_InElem}     xpath://BUTTON[@class='action login primary']
 
 *** Keywords ***
 
-GoToUrl
-    Open browser    https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/   chrome
 
+Click_Sign_In
+    Wait Until Page Contains Element    ${Sign_InElem}	
+	Click button    ${Sign_InElem}
 
 Enter_Email
     [Arguments]      ${Email}
@@ -27,6 +28,5 @@ Enter_PasswordPassword
     Wait Until Page Contains Element    ${PasswordPasswordElem}    
 	Input Text      ${PasswordPasswordElem}     ${PasswordPassword}
 
-Click_Sign_In
-    Wait Until Page Contains Element    ${Sign_InElem}	
-	Click button    ${Sign_InElem}
+GoToUrl
+    Open browser    https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/   chrome
