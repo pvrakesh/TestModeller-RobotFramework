@@ -13,6 +13,8 @@ ${Sign_InElem}     xpath://BUTTON[@class='action login primary']
 
 *** Keywords ***
 
+Assert__Customer_Login_The_account_signin_was_incorrect_or_your_account_is_disabled_temporarily
+    Page Should Contain Image ${_Customer_Login_The_account_signin_was_incorrect_or_your_account_is_disabled_temporarilyElem}
 
 Click_Sign_In
     Wait Until Page Contains Element    ${Sign_InElem}	
