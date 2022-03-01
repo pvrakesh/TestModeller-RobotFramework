@@ -6,16 +6,20 @@ Documentation     A test suite for the model https://helloworld.cloud.testinsigh
 Resource         Customer_Loginrr2
 
 *** Test Cases *** 
-PositiveEnterEmailPositiveEnterPasswordPasswordClickSignInpositiveend  
+GoToUrlPositiveEnterEmailPositiveEnterPasswordPasswordClickSignInpositiveend  
+    GoToUrl    
+
     Enter_Email    roni_cost@example.com
 
-    Enter_PasswordPassword    FlLvGxz2Si
+    Enter_PasswordPassword    YwLvACKUYF
 
     Click_Sign_In    
 
 
 
-PositiveEnterEmailNegativeEnterPasswordPasswordClickSignInAssertCustomerLoginTheaccountsigninwas  
+GoToUrlPositiveEnterEmailNegativeEnterPasswordPasswordClickSignInAssertCustomerLoginTheaccounts  
+    GoToUrl    
+
     Enter_Email    roni_cost@example.com
 
     Enter_PasswordPassword    abcd
@@ -26,10 +30,12 @@ PositiveEnterEmailNegativeEnterPasswordPasswordClickSignInAssertCustomerLoginThe
 
 
 
-NegativeEnterEmailPositiveEnterPasswordPasswordClickSignInAssertCustomerLoginTheaccountsigninwas  
+GoToUrlNegativeEnterEmailPositiveEnterPasswordPasswordClickSignInAssertCustomerLoginTheaccounts  
+    GoToUrl    
+
     Enter_Email    roni_cost
 
-    Enter_PasswordPassword    pWhZ86kpTk
+    Enter_PasswordPassword    WDX4rmV04x
 
     Click_Sign_In    
 
@@ -37,7 +43,9 @@ NegativeEnterEmailPositiveEnterPasswordPasswordClickSignInAssertCustomerLoginThe
 
 
 
-NegativeEnterEmailNegativeEnterPasswordPasswordClickSignInAssertCustomerLoginTheaccountsigninwas  
+GoToUrlNegativeEnterEmailNegativeEnterPasswordPasswordClickSignInAssertCustomerLoginTheaccounts  
+    GoToUrl    
+
     Enter_Email    roni_cost
 
     Enter_PasswordPassword    abcd
