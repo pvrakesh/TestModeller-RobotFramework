@@ -1,0 +1,32 @@
+*** Settings ***
+Library     SeleniumLibrary
+
+*** Variables ***
+
+${_Customer_Login_The_account_signin_was_incorrect_or_your_account_is_disabled_temporarilyElem}     xpath://MAIN[@id='maincontent']
+
+${EmailElem}     xpath://label[normalize-space()= 'Email']/../div/input
+
+${PasswordPasswordElem}     xpath:(.//label[normalize-space()= 'Password'])[1]/../div/input
+
+${Sign_InElem}     xpath://BUTTON[@class='action login primary']
+
+*** Keywords ***
+
+GoToUrl
+    Open browser    https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/   chrome
+
+
+Enter_Email
+    [Arguments]      ${Email}
+    Wait Until Page Contains Element    ${EmailElem}    
+	Input Text      ${EmailElem}     ${Email}
+
+Enter_PasswordPassword
+    [Arguments]      ${PasswordPassword}
+    Wait Until Page Contains Element    ${PasswordPasswordElem}    
+	Input Text      ${PasswordPasswordElem}     ${PasswordPassword}
+
+Click_Sign_In
+    Wait Until Page Contains Element    ${Sign_InElem}	
+	Click button    ${Sign_InElem}
