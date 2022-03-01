@@ -1,0 +1,14 @@
+*** Settings ***
+Library     SeleniumLibrary
+
+*** Variables ***
+
+${Incorrect_CAPTCHAElem}     xpath://DIV[@data-bind='html: $parent.prepareMessageForHtml(message.text)']
+
+*** Keywords ***
+
+GoToUrl
+    Open browser    https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/   chrome
+
+Assert_Incorrect_CAPTCHA
+    Page Should Contain Image ${Incorrect_CAPTCHAElem}
