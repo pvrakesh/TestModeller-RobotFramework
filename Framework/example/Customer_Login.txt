@@ -11,9 +11,10 @@ ${Sign_InElem}     id=com.example.mybank:id/login
 
 *** Keywords ***
 
-Click_Sign_In
-  Click Element  ${Sign_InElem} 
-
+GoToUrl
+    [Arguments]      ${ANDROID_AUTOMATION_NAME}  ${ANDROID_PLATFORM_NAME}  ${ANDROID_PLATFORM_VERSION}  ${DEVICE_NAME}  ${ANDROID_APP}  ${APP_PACKAGE}  ${APP_ACTIVITY}
+  Open Application  http://localhost:4723/wd/hub  automationName=${ANDROID_AUTOMATION_NAME}
+  ...  platformName=${ANDROID_PLATFORM_NAME}  platformVersion=${ANDROID_PLATFORM_VERSION} app=${ANDROID_APP}  appPackage=${APP_PACKAGE}  appActivity=${APP_ACTIVITY}
 Enter_Email
     [Arguments]      ${Email}
     Wait Until Page Contains Element    ${EmailElem}    
@@ -24,11 +25,5 @@ Enter_Password
     Wait Until Page Contains Element    ${PasswordElem}    
 	Input Text      ${PasswordElem}     ${Password}
 
-GoToUrl
-    [Arguments]      ${ANDROID_AUTOMATION_NAME}  ${ANDROID_PLATFORM_NAME}  ${ANDROID_PLATFORM_VERSION}  ${DEVICE_NAME}  ${ANDROID_APP}  ${APP_PACKAGE}  ${APP_ACTIVITY}
-  Open Application  http://localhost:4723/wd/hub  automationName=${ANDROID_AUTOMATION_NAME}
-  ...  platformName=${ANDROID_PLATFORM_NAME}  platformVersion=${ANDROID_PLATFORM_VERSION} app=${ANDROID_APP}  appPackage=${APP_PACKAGE}  appActivity=${APP_ACTIVITY}
-GoToUrl
-    [Arguments]      ${ANDROID_AUTOMATION_NAME}  ${ANDROID_PLATFORM_NAME}  ${ANDROID_PLATFORM_VERSION}  ${DEVICE_NAME}  ${ANDROID_APP}  ${APP_PACKAGE}  ${APP_ACTIVITY}
-  Open Application  http://localhost:4723/wd/hub  automationName=${ANDROID_AUTOMATION_NAME}
-  ...  platformName=${ANDROID_PLATFORM_NAME}  platformVersion=${ANDROID_PLATFORM_VERSION} app=${ANDROID_APP}  appPackage=${APP_PACKAGE}  appActivity=${APP_ACTIVITY}
+Click_Sign_In
+  Click Element  ${Sign_InElem} 
