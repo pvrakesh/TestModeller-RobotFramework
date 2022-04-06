@@ -11,7 +11,7 @@ GoToUrlPositiveEnterEmailPositiveEnterPasswordPasswordClickSignInpositiveend
 
     Enter_Email    roni_cost@example.com
 
-    Enter_PasswordPassword    YwLvACKUYF
+    Enter_PasswordPassword    FCg2CG87uP
 
     Click_Sign_In    
 
@@ -35,7 +35,7 @@ GoToUrlNegativeEnterEmailPositiveEnterPasswordPasswordClickSignInAssertCustomerL
 
     Enter_Email    roni_cost
 
-    Enter_PasswordPassword    WDX4rmV04x
+    Enter_PasswordPassword    OJwbHYPFTd
 
     Click_Sign_In    
 
